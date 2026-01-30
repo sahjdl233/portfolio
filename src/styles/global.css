@@ -1,0 +1,19 @@
+/* styles/global.css */
+:root {
+  --primary-color: #3498db;
+  --spacing-unit: 8px;
+}
+
+.responsive-media {
+  max-width: 100%;
+  height: auto;
+}
+
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazy-load.loaded {
+  opacity: 1;
+}
