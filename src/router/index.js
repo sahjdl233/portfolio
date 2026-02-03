@@ -15,9 +15,14 @@ const routes = [
 ];
 
 const router = createRouter({
-  // 使用 hash 路由即可，不再依赖 process.env.BASE_URL（那是 Vue CLI 的写法）
-  history: createWebHashHistory(),
-  routes,
-});
+  history: createWebHashHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home,
+    }
+  ],
+})
 
 export default router;
