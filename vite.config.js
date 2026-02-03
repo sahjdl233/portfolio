@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/',
+  base: '/portfolio/',
   build: {
     rollupOptions: {
       output: {
