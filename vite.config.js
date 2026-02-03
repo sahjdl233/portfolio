@@ -9,6 +9,13 @@ const __dirname = dirname(__filename);
 export default defineConfig({
   plugins: [vue()],
   base: '/',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      }
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
